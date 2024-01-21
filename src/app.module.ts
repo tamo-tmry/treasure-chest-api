@@ -1,9 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { ChecklistModule } from './checklist/checklist.module';
 
 @Module({
-  imports: [],
+  imports: [ChecklistModule],
   controllers: [AppController],
   providers: [AppService],
 })
